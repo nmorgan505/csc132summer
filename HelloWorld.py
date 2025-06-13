@@ -1,5 +1,9 @@
+from Missile import text
 print("Hello World")
 print("I am Iron Man")
+
+#Missile text
+print(text)
 
 ### David ###
 ## Print Introduction ##
