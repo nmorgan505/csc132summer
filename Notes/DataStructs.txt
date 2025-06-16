@@ -1,0 +1,28 @@
+
+# new list commands
+
+- filter: 
+
+filter(function, mylist)
+
+Returns an iterator. An iterator is an object that contains a list of values filtered 
+by a function
+
+list(filter(function, mylist)) 
+
+
+
+- maps:
+
+map(function, list)
+
+return an interator that contains a list of values that are mapped from one value (from 
+the given function), to a new value (from the function)
+
+- reduce:
+
+must import from functools library
+
+reduces a list to a single value based on a function 
+
+value = reduce(function, list)
