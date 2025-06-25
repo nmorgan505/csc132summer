@@ -5,15 +5,12 @@ class Vehicle:
 		self.owner = name
 
 	def __str__(self):
-		return f"owner={self.owner}\nengine={self.engine}\ntires={self.tires}\n"
+		return f"Vehicle:\nowner={self.owner}\nengine={self.engine}\ntires={self.tires}\n"
 
 class Cycle(Vehicle):
 	def __init__(self, name):
 		super().__init__(name)
 		self.tires = 2
-
-	def __str__(self):
-		return super().__str__()
 
 class Car(Vehicle):
 	def __init__(self, name):
@@ -27,8 +24,7 @@ class Bicycle(Cycle):
 	def __init__(self, name):
 		super().__init__(name)
 		self.engine = False
-	def __str__(self):
-		return f"Bicycle:\n" + super().__str__()
+
 
 class Motorcycle(Cycle):
 	def __init__(self, name):
