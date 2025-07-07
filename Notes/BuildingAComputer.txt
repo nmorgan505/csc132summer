@@ -1,0 +1,54 @@
+
+
+# Signed numbers:
+
+	- Establish a sign bit that leads a string of numbers:
+		- 1 is negative
+		- 0 is positive
+	- These will always be the most significant bit of an integer
+	
+
+	- Sign magnitude:
+		- the first bit is the sign, the rest of the number is the magnitude:
+			- 1001 = -1
+			- 0001 = 1
+
+	- One's complement:
+		- Sign magnitude can't be used for math, so this was developed
+		- Method: Flip all the bits, sill using a sign bit
+			- 0001 = 1
+			- 1110 = -1
+
+	- Two's complement:
+		- One's complement can be used for math, but has two 0 representations (0000, 1111)
+		- Two's complement solves this
+		- Method: Flip all the bits and add 1
+			- 0001 = 1
+			- 1110 (flip the bits)
+			 +0001 (add 1)
+			- 1111 = -1
+
+
+# ASCII
+
+	- ASCII: American Standard Code for Information Interchange
+	- Gives numerical values to characters or control characters for viewing/writing 
+	  in a computer system
+
+	Character Group		Range
+	Control Characters	0-31	0-1F
+	Punctuation		32-47   20-2F
+	Digits			48-57	30-39
+	More Punctuation	58-64	3A-40
+	Uppercase Letters	65-90	41-5A
+	More Punctuation	91-96	5B-60
+	Lowercase Letters	97-122	61-7A
+	More Punctuation	123-126	7B-7E
+	Last Control		127	7F
+
+
+a- 01100001
+A- 01000001
+
+b- 01100010
+B- 01000010
